@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            .navbar{
+                position:fixed;
+                width: 100%;
+                .navbar-nav{
+                    a:hover{
+                         color: red !important;
+                         scale:1.1;
+                    }
+            
+                }
+            }
+            .section-1{
+                width: 100%;
+                height: 600px;
+                background-image: url(./bg-image.avif);
+                background-repeat: no-repeat;
+                background-position: 100% 100%;
+                background-size: cover;
+                position: relative;
+                .intro{
+                    
+                   position: absolute;
+                   top:35%;
+                   left:24%;
+                   font-family:'Times New Roman', Times, serif;
+                   font-size:30px;
+                   font-weight: bolder;
+                   
+                   .sub-intro{
+                   font-family: 'Courier New', Courier, monospace;
+                   color: rgb(138, 41, 157);
+                   font-size: 25px;
+                   font-weight:500;
+            
+                   }
+                }
+            }
+        .profile{
+            img{
+                border-radius: 50%;
+            }
+        } 
+       
+    }
+    
+    .progress{
+        height: 20px;
+        width:70%;
+    }
+    .skills{
+        margin-top: 100px;
+    }
+    .services{
+        margin-top: 80px;
+    }
+    .item,.item-project{
+            height: 300px;
+            width:300px;
+            border: 2px solid rgba(139, 112, 112,0.4);
+            border-radius: 10px 10px;
+            margin:5px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+           
+            .web-dev{
+                display: none;
+            }
+            
+    }
+    .item-project{
+            height: 400px;
+            width:600px;
+    }
+    .item:hover{
+        display:block;
+        img{
+            scale:0.6;
+        }
+        .web-dev{
+            margin-top: -30px;
+            display:block;
+           
+        }
+    }
+    .contact{
+        width: 100%;
+        height:700px;
+        form{
+            width: 500px;
+            background-color: rgb(211, 218, 224);
+            padding:40px;
+            font-family: 'Times New Roman', Times, serif;
+            dd{
+                input{
+                    border-radius: 8px 8px;
+                    padding:10px;
+                    width: 80%;
+                    border: none;
+                }
+                textarea{
+                    border-radius: 10px 10px;
+                    width:70%;
+                }
+            }
+        }
+        
+    }
+    
+        
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="section-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-black ps-4 pe-4">
+            <div><a class="navbar-brand text-light" href="#">Gopi Prasanna Anumala</a></div>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto gap-4">
+                    <a class="nav-item text-light nav-link active" href="#">Home</a>
+                    <a class="nav-item text-light nav-link" href="#about">About</a>
+                    <a class="nav-item text-light nav-link" href="#projects">Projects </a>
+                    <a class="nav-item text-light nav-link" href="#skills">Skills </a>
+                    <a class="nav-item text-light nav-link" href="#about">Resume</a>
+                    <a class="nav-item text-light nav-link" href="#contact">Contact  </a>
+                </div>
+            </div>
+        </nav>
+      <div class="intro">
+       <p>Hi! <br> I am Anumala<br> Gopi Prasanna <br><span class=" mt-5"><h6 class="sub-intro">MERN STACK DEVELOPER</h6></span></p>
+       <button class="btn btn-primary">Read more</button>
+        </div>
+    </div>
+<div class="container-fluid body-details">
+   
+    <div class="row about" id="about">
+        <div class="col-sm-5">
+           <div class="profile p-4 text-center">
+             <a href="">
+                <img src="./gopipic.jpg" alt="" width="300" height="300px">
+            </a>
+           </div>
+        </div>
+        <div class="col-sm-7  about-details gap-4 p-4">
+            <h3 class="bg-primary" style="font-family:cursive;font-weight: bold;">Know Me ?</h3>
+            <h5 class="bg-info" style="font-family:Georgia, 'Times New Roman', Times, serif;font-style: italic;">A Glimpse of Me</h5>
+            <p>
+              I'm <b>Gopi Prasanna Anumala</b>, a passionate frontend developer with a strong interest in technology and innovation. I enjoy building intuitive, user-friendly interfaces while ensuring responsive design and performance optimization.  
+
+            I have hands-on experience with HTML, CSS, JavaScript, React.js, and Bootstrap, along with backend technologies like Node.js and MongoDB. My goal is to develop efficient, scalable, and impactful applications while continuously exploring emerging technologies.  
+
+            I'm eager to apply my technical skills and problem-solving abilities to real-world projects and contribute to innovative solutions.    
+           
+
+
+            </p>
+            <button class="btn btn-primary"><a href="https://drive.google.com/file/d/1r84csBND_PVAkguqLCN6rnzdt67RNalI/view?usp=sharing" style="color: white;text-decoration: none;">Download CV</a></button>
+        </div>
+    </div>
+        <div class="skills pt-4 text-center" id="skills">
+        <h1 class="text-primary" style="font-family: cursive;font-size: 35px;font-weight: bold;">Skills</h1>
+         <p  style="color: rgb(109, 80, 80);font-size: 16px;">Skills that enhanced my journey to become a MERN STACK DEVELOPER...</p>
+          <div class="row">
+        <div class="col-sm-6">
+             <p class="text-primary" style="font-family:system-ui">Html</p>
+        <div class="progress m-3">
+           <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+               95%
+          </div>
+        </div>
+        <p class="text-primary">Css</p>
+        <div class="progress m-3">
+         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+        80%
+        </div>
+         </div>
+        <p class="text-primary">Java Script</p>
+        <div class="progress m-3">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            90%
+            </div>
+        </div>
+        <p class="text-primary">ReactJS</p>
+        <div class="progress m-3">
+            <h1></h1>
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            80%
+            </div>
+        </div>
+                </div>
+            <div class="col-sm-6">
+                <p class="text-primary">NodeJs</p>
+                    <div class="progress m-3">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                75%
+                        </div>
+                    </div>
+                    <p class="text-primary">MongoDB</p>
+                    <div class="progress m-3">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            80%
+            </div>
+        </div>
+        <p class="text-primary">Java</p>
+        <div class="progress m-3">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            80%
+            </div>
+        </div>
+        <p class="text-primary">Python</p>
+        <div class="progress m-3">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            80%
+            </div>
+            </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    <div class="services text-center">
+        <p style="color: rgb(109, 80, 80);font-size: 16px;margin-bottom: 0;">What I Specialize In ?</p>
+        <h1 class="text-primary" style="font-family: cursive;font-size: 35px;font-weight: bold;margin-bottom: 40px;">Service</h1>
+        <ul class="list-services list-unstyled d-flex flex-wrap justify-content-around">
+            <li class="item">
+                <img src="./web-development.svg" alt="" width="180" height="180">
+                <div class="web-dev">Building dynamic and responsive web applications using MERN stack technologies.</div>
+            </li>
+            <li class="item">
+                <img src="./Api.jpg" alt="" width="180" height="180">
+                <div class="web-dev">Creating RESTful and GraphQL APIs using Node.js and Express.js for seamless data communication.</div>
+            </li>
+            <li class="item">
+                <img src="./Database.png" alt="" width="180" height="180">
+                <div class="web-dev">Designing, managing, and optimizing databases using MongoDB for efficient data storage.</div>
+            </li>
+            <li class="item">
+                <img src="./UX.jpg" alt="" width="180" height="180">
+                <div class="web-dev"> Crafting interactive and user-friendly frontends with React.js for a smooth user experience.</div>
+            </li>
+        </ul>
+    </div>
+    <div class="projects text-center" id="projects">
+       <p style="color: rgb(109, 80, 80);font-size: 16px;margin-bottom: 0;">What I Specialize In ?</p>
+        <h1 class="text-primary" style="font-family: cursive;font-size: 35px;font-weight: bold;margin-bottom: 40px;">Service</h1>
+        <ul class="list-services list-unstyled d-flex flex-wrap justify-content-around">
+            <li class="item-project item">
+                <img src="./Screenshot 2024-12-18 104117.png" alt="" width="90%" height="90%">
+                <div class="web-dev"><button class="btn btn-primary">online Shoppy</button></div>
+            </li>
+            <li class="item-project item">
+                <img src="./Screenshot 2024-12-20 145405.png" alt="" width="90%" height="90%">
+                <div class="web-dev"><button class="btn btn-primary">online Shoppy</button></div>
+            </li>
+            <li class="item-project item">
+                <img src="./Screenshot 2024-12-01 190655.png" alt="" width="90%" height="90%">
+                <div class="web-dev"><button class="btn btn-primary">online Shoppy</button></div>
+            </li>
+            <li class="item-project item">
+                <img src="./Screenshot 2024-11-23 155352.png" alt="" width="90%" height="90%">
+                <div class="web-dev"><button class="btn btn-primary">online Shoppy</button></div>
+            </li>
+        </ul>
+    </div>
+            <div class="opentoconnect d-flex justify-content-around bg-primary align-items-center flex-wrap height-auto">
+                <div class="text-center">
+                        <h2 style="font-family: 'Times New Roman', Times, serif;color: white;font-weight: bold;padding-top:9px;">let's connect</h2>
+                        <p style="color:white;">
+                            Looking for a Passionate Developer? Hire Me!
+                        </p>
+                </div>
+                <div class="hire-me">
+                    <button class="btn btn-light">Hire me</button>
+                </div>
+            </div> 
+            
+        <div class="contact d-flex justify-content-center align-items-center">
+            
+                <form className="mt-4 w-25 p-4 form-content" id="contact">
+                        <dt>Enter Full Name</dt>
+                        <dd><input type="text" className="form-control" /></dd>
+                        <dt>Enter Email</dt>
+                        <dd><input type="password" className="form-control"  /></dd>
+                        <dt>Phone</dt>
+                        <dd><input type="email" className="form-control"  /></dd>
+                        <dt>Write a Message</dt>
+                        <dd>
+                            <textarea name="" id="" rows="8"></textarea>
+                        </dd>
+                    
+                    </dl>
+                   <button class="btn btn-primary">Send Message</button>
+                </form>
+           
+    
+        </div>
+    </div>       
+    <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-1">© 2025 Gopi Prasanna Anumala. All Rights Reserved.</p>
+        <p class="mb-1">Designed & Developed by Gopi Prasanna</p>
+       
+        <div class="mt-2">
+            <a href="https://www.facebook.com/" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/?lang=en-in" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/gopi-prasanna/" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/gopianumala" class="text-white mx-2"><i class="fab fa-github"></i></a>
+        </div>
+    
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    
+
+    </div>
+    
+  
+
+</body>
+</html>
